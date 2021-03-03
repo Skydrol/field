@@ -24,3 +24,5 @@ program.parse(process.argv);
 
 const options = program.opts();
 if (options.list) console.log(options);
+
+//node command.js getNumberOfCarsByBrand aaa
