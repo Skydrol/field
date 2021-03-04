@@ -7,22 +7,22 @@ const {
 } = require('./main');
 
 program
-    .version('1.0.0')
-    .description('Cars CSV simple searcher');
-
-program
     .command('getNumberOfCarsByBrand <brand>')
     .alias('cars-by-brand')
     .description('get the number of cars by brand (parameter: brand)')
-    .action((brand) => {
-        getNumberOfCarsByBrand(brand);
-    });
-program
     .option('-l, --list', 'list cars')
+    .action((brand, options) => {
+        getNumberOfCarsByBrand(brand, options.list);
+    });
+
+program
+    .command('getTotalValueByDealership <dealership>')
+    .alias('cars-by-dealer')
+    .description('get the total value of cars that exist in a given dealership')
+    .option('-l, --list', 'list cars')
+    .action((dealership) => {
+        getTotalValueByDealership(dealership);
+    });
+
 
 program.parse(process.argv);
-
-const options = program.opts();
-if (options.list) console.log(options);
-
-//node command.js getNumberOfCarsByBrand aaa
