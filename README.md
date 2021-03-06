@@ -4,7 +4,7 @@ The following code represents a small CLI application for car data searching.
 
 ## Usage
 
-There are some command implemented.
+There are some command implemented. You need to execute it on bash in the root directory.
 
 To get the number of cars by brand (parameter: brand):
 
