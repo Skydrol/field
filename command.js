@@ -29,7 +29,7 @@ program
 
 //==================== CARS BY MILEAGE ====================
 program
-    .command('getNumberOfCarsByMileages <minMileage>, <maxMileage>')
+    .command('getNumberOfCarsByMileages <minMileage> <maxMileage>')
     .alias('cars-by-mileage-range')
     .description('get the number of cars and the list of cars by mileage range (parameters: maxMileage, minMileage)')
     .action((minMileage, maxMileage) => {
