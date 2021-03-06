@@ -19,7 +19,7 @@ To get the number of cars and the list of cars by mileage range (parameters: max
 ```bash
 node command.js getNumberOfCarsByMileages <minMileage>, <maxMileage>
 ```
-get the total value of cars that exist in a given dealership (parameter: dealership);
+To get the total value of cars that exist in a given dealership (parameter: dealership);
 ```bash
 node command.js getTotalValueByDealership <dealership>
 ```
